@@ -1,7 +1,3 @@
-#CMPT 354 Final Project
-
-# Shivansh Sasan
-# 301329132
 
 #importing libraries
 import sys
@@ -104,6 +100,7 @@ def rotation(image):
 #function to flip images
 def flip(image):
     global edited
+    global changed
 
     print('How would you like to flip the image?: ')
     print('\t1\tFlip Vertically')
@@ -146,7 +143,18 @@ def flip(image):
 #defination of main function
 def main():
     global edited
-
+    '''
+    print(len(sys.argv))
+    
+    if len(sys.argv) > 1:
+        a = 0
+        while a < len(sys.argv):
+            print(sys.argv[a])
+            print("\t")
+            a = a + 1
+        
+    '''    
+    
     print('Name of the image you would like to edit (with extension): ')
 
     name = input('Name: ')
